@@ -1,6 +1,8 @@
 # SmallFriend
 NeoTrinkey Morse code blinker 
 
+Project files to copy to your neotrinkey:
+
 * friend.py - Program - rename as code.py to run on neotrinkey
 * morse.py - encodes text to Morse code, prints it and blinks via neopixels
 * tolkien - a batch of Tolkien quotes
@@ -20,9 +22,16 @@ message5 = "hi"
 message6 = "hello"
 ```
 
+
 If you touch #1 the blue "eyes" will wink and then one of the Tolkien quotes will be blinked out in code.
 
 If you run the program while running an IDE like Mu or Thonny, it will print the text and the morse code.
 
+You can replace the quotes in "tolkien" or create a new file with the text you want to have blinked out. If you create a new file, then change this line:
+
+```
+        docode(getWD("tolkien"))
+```
+to name the new file.
 
 
